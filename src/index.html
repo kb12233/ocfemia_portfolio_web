@@ -28,8 +28,6 @@
           </li>
         </ul>
         
-        <img src="/assets/img/moon.png" class="hidden md:block w-5 cursor-pointer" alt="">
-        
         <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
@@ -98,9 +96,9 @@
   <!-- about section -->
   <div class="w-full flex items-center justify-center mt-72 mb-44">
     <section id="about" class="container flex flex-col items-center justify-center gap-2 w-full">
-      <div class="flex flex-col items-center justify-center gap-2">
-        <p class="">Get To Know More</p>
-        <h1 class="">About Me</h1>
+      <div class="flex flex-col items-center justify-center gap-2 mb-16">
+        <p class="text-sm text-gray-500">Get To Know More</p>
+        <h1 class="font-bold text-3xl">About Me</h1>
       </div>
       <div class="flex flex-col lg:flex-row items-center justify-center gap-2 px-10 xl:px-32">
         <img
@@ -110,7 +108,7 @@
           />
         <div class="flex flex-col gap-2">
           <div class="flex flex-col md:flex-row gap-2 px-5">
-            <div class="flex flex-1 flex-col items-center justify-start border border-gray-500 rounded-lg">
+            <div class="flex flex-1 flex-col items-center justify-start border-2 border-gray-400 rounded-lg">
               <img
                 src="/assets/img/experience.png"
                 alt="Experience icon"
@@ -127,7 +125,7 @@
               <p class="text-center font-bold text-sm">Mobile App Development:</p>
               <p class="text-center text-sm">Android, Flutter</p>
             </div>
-            <div class="flex flex-1 flex-col items-center justify-start border border-gray-500 rounded-lg">
+            <div class="flex flex-1 flex-col items-center justify-start border-2 border-gray-400 rounded-lg">
               <img
                 src="/assets/img/education.png"
                 alt="Education icon"
@@ -158,8 +156,66 @@
   </div>
   
   <!-- projects section -->
+  <div class="mt-72 mb-44">
+    <section>
+      <div class="flex flex-col items-center justify-center gap-2 mb-16">
+        <p class="text-sm text-gray-500">Check Out My Recent</p>
+        <h1 class="font-bold text-3xl">Projects</h1>
+      </div>
+
+      <div id="card-container" class="flex flex-wrap items-center justify-center gap-4">
+        <div class="card">
+          <img src="/assets/img/classy_code-sc.png" class="h-96 w-full object-cover">
+          <div class="m-4">
+            <span id="project-name" class="font-semibold">ClassyCode</span>
+            <span id="project-description" class="block">A Flutter desktop app that generates code from class diagram images.</span>
+            <div id="btn-container" class="flex justify-center mt-2">
+              <button 
+                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+                onclick="location.href='./#contact'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="/assets/img/RentEase.png" class="h-96 w-full object-cover">
+          <div class="m-4">
+            <span id="project-name" class="font-semibold">RentEase</span>
+            <span id="project-description" class="block">An AirBnB clone built with Flutter and Firebase.</span>
+            <div id="btn-container" class="flex justify-center mt-2">
+              <button 
+                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+                onclick="location.href='./#contact'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="/assets/img/code_sc_lg.png" class="h-96 w-full object-cover">
+          <div class="m-4">
+            <span id="project-name" class="font-semibold">CODE Interpreter</span>
+            <span id="project-description" class="block">Interpreter written in Java for a programming language we call CODE.</span>
+            <div id="btn-container" class="flex justify-center mt-2">
+              <button 
+                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+                onclick="location.href='./#contact'">
+                Github
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
   
   <!-- contact section -->
+
+  <!-- footer -->
+
   <script src="app.js"></script>
 </body>
 </html>
