@@ -10,3 +10,7 @@
 .card_button {
     @apply font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-custom_gray bg-custom_gray text-white hover:bg-black;
 }
+
+card_button_cdn {
+    @apply font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-gray-700 text-white hover:bg-black;
+}
