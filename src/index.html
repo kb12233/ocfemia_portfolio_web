@@ -18,14 +18,14 @@
           <span id="kb" class="text-2xl font-bold">Karl Brandon Ocfemia</span>
         </div>
         
-        <ul class="hidden md:flex space-x-10 text-gray-700 font-bold text-sm">
-          <li class="hover:text-gray-500">
+        <ul class="hidden md:flex space-x-10 text-custom_gray2 font-bold text-sm">
+          <li class="hover:text-gray-400">
             <a href="#about">About</a>
           </li>
-          <li class="hover:text-gray-500">
+          <li class="hover:text-gray-400">
             <a href="#projects">Projects</a>
           </li>
-          <li class="hover:text-gray-500">
+          <li class="hover:text-gray-400">
             <a href="#contact">Contact</a>
           </li>
         </ul>
@@ -36,15 +36,15 @@
           <div class="w-6 h-0.5 bg-black"></div>
         </div>
         
-        <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-gray-700 text-center border-b-4 border-gray-300">
+        <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 font-bold text-custom_gray2 text-center border-b-4 border-gray-300">
           <li>
-            <a id="hamburger-option" href="#about" class="hover:text-gray-500">About</a>
+            <a id="hamburger-option" href="#about" class="hover:text-gray-400">About</a>
           </li>
           <li>
-            <a id="hamburger-option" href="#projects" class="hover:text-gray-500">Projects</a>
+            <a id="hamburger-option" href="#projects" class="hover:text-gray-400">Projects</a>
           </li>
           <li>
-            <a id="hamburger-option" href="#contact" class="hover:text-gray-500">Contact</a>
+            <a id="hamburger-option" href="#contact" class="hover:text-gray-400">Contact</a>
           </li>
         </ul>
       </div>
@@ -60,19 +60,19 @@
       </div>
   
       <div class="flex flex-col items-center justify-center gap-y-3">
-        <p class="font-bold text-gray-600 text-sm sm:text-base">Hello, I'm</p>
+        <p class="font-bold text-custom_gray2 text-sm sm:text-base">Hello, I'm</p>
         <h1 class="font-bold text-2xl sm:text-3xl">Kb Ocfemia</h1>
-        <p class="font-bold text-base sm:text-xl text-gray-500">Computer Science Student</p>
+        <p class="font-bold text-base sm:text-xl text-custom_gray2">Computer Science Student</p>
         <div class="flex flex-wrap items-center justify-center gap-2">
           <button
-            class="flex items-center gap-2 font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 hover:bg-gray-700 hover:text-white"
+            class="flex items-center gap-2 font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-custom_gray hover:bg-custom_gray hover:text-white"
             onclick="window.open('/assets/Ocfemia_Resume.pdf')"
           >
             <img src="/assets/img/download_icon.png" class="h-4" alt="">
             Resume
           </button>
           <button 
-            class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+            class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-custom_gray text-white hover:bg-black" 
             onclick="location.href='./#contact'">
             Contact Info
           </button>
@@ -99,7 +99,7 @@
   <div id="about" class="w-full flex items-center justify-center mt-72 mb-44">
     <section id="about" class="container flex flex-col items-center justify-center gap-2 w-full">
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
-        <p class="text-sm text-gray-500">Get To Know More</p>
+        <p class="text-sm text-custom_gray2">Get To Know More</p>
         <h1 class="font-bold text-3xl">About Me</h1>
       </div>
       <div class="flex flex-col lg:flex-row items-center justify-center gap-2 px-10 xl:px-32">
@@ -161,7 +161,7 @@
   <div id="projects" class="mt-72 mb-44">
     <section>
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
-        <p class="text-sm text-gray-500">Check Out My Recent</p>
+        <p class="text-sm text-custom_gray2">Check Out My Recent</p>
         <h1 class="font-bold text-3xl">Projects</h1>
       </div>
 
@@ -173,7 +173,7 @@
             <span id="project-description" class="block">A Flutter desktop app that generates code from class diagram images.</span>
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
-                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+                class="card_button" 
                 onclick="location.href='https://github.com/kb12233/classy_code'">
                 Github
               </button>
@@ -188,7 +188,7 @@
             <span id="project-description" class="block">An AirBnB clone built with Flutter and Firebase.</span>
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
-                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+                class="card_button" 
                 onclick="location.href='https://github.com/kb12233/rent_ease'">
                 Github
               </button>
@@ -203,7 +203,7 @@
             <span id="project-description" class="block">Interpreter written in Java for a programming language we call CODE.</span>
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
-                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
+                class="card_button" 
                 onclick="location.href='https://github.com/kb12233/code-interpreter'">
                 Github
               </button>
@@ -218,7 +218,7 @@
   <div id="contact" class="flex mb-40 items-center justify-center">
     <section class=" ">
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
-        <p class="text-sm text-gray-500">Get in Touch</p>
+        <p class="text-sm text-custom_gray2">Get in Touch</p>
         <h1 class="font-bold text-3xl">Contact Me</h1>
       </div>
       <div class="flex flex-wrap gap-2 items-center justify-center border-2 border-gray-400 rounded-full">
@@ -237,7 +237,7 @@
 
   <!-- footer -->
   <footer id="footer" class="flex items-center justify-center mb-10">
-    <p class="text-gray-500">Copyright &#169; 2024 Karl Brandon Ocfemia. All Rights Reserved.</p>
+    <p class="text-custom_gray2">Copyright &#169; 2024 Karl Brandon Ocfemia. All Rights Reserved.</p>
   </footer>
   <script src="app.js"></script>
 </body>

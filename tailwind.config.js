@@ -5,6 +5,10 @@ module.exports = {
     extend: {
       screens: {
         "sm": "480px",
+      },
+      colors: {
+        "custom_gray": "#353535",
+        "custom_gray2": "#555555"
       }
     },
     fontFamily: {
