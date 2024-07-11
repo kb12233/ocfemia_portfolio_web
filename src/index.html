@@ -6,6 +6,8 @@
   
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
   <link href="output.css" rel="stylesheet">
+
+  <title>Kb's Portfolio</title>
 </head>
 <body class="font-jbmono">
   <!-- nav -->
@@ -18,13 +20,13 @@
         
         <ul class="hidden md:flex space-x-10 text-gray-700 font-bold text-sm">
           <li class="hover:text-gray-500">
-            <a href="#">About</a>
+            <a href="#about">About</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li class="hover:text-gray-500">
-            <a href="#">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
         
@@ -36,13 +38,13 @@
         
         <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-gray-700 text-center border-b-4 border-gray-300">
           <li>
-            <a href="#" class="hover:text-gray-500">About</a>
+            <a id="hamburger-option" href="#about" class="hover:text-gray-500">About</a>
           </li>
           <li>
-            <a href="#" class="hover:text-gray-500">Projects</a>
+            <a id="hamburger-option" href="#projects" class="hover:text-gray-500">Projects</a>
           </li>
           <li>
-            <a href="#" class="hover:text-gray-500">Contact</a>
+            <a id="hamburger-option" href="#contact" class="hover:text-gray-500">Contact</a>
           </li>
         </ul>
       </div>
@@ -80,13 +82,13 @@
             src="/assets/img/linkedin copy.png"
             alt="My LinkedIn profile"
             class="h-8 cursor-pointer"
-            onclick="location.href='https://linkedin.com/'"
+            onclick="location.href='https://www.linkedin.com/in/karl-brandon-ocfemia/'"
           />
           <img
             src="/assets/img/github.png"
             alt="My Github profile"
             class="h-8 cursor-pointer"
-            onclick="location.href='https://github.com/'"
+            onclick="location.href='https://github.com/kb12233'"
           />
         </div>
       </div>
@@ -94,7 +96,7 @@
   </div>
   
   <!-- about section -->
-  <div class="w-full flex items-center justify-center mt-72 mb-44">
+  <div id="about" class="w-full flex items-center justify-center mt-72 mb-44">
     <section id="about" class="container flex flex-col items-center justify-center gap-2 w-full">
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
         <p class="text-sm text-gray-500">Get To Know More</p>
@@ -156,7 +158,7 @@
   </div>
   
   <!-- projects section -->
-  <div class="mt-72 mb-44">
+  <div id="projects" class="mt-72 mb-44">
     <section>
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
         <p class="text-sm text-gray-500">Check Out My Recent</p>
@@ -172,7 +174,7 @@
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
                 class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
-                onclick="location.href='./#contact'">
+                onclick="location.href='https://github.com/kb12233/classy_code'">
                 Github
               </button>
             </div>
@@ -187,7 +189,7 @@
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
                 class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
-                onclick="location.href='./#contact'">
+                onclick="location.href='https://github.com/kb12233/rent_ease'">
                 Github
               </button>
             </div>
@@ -202,7 +204,7 @@
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
                 class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-black text-white hover:bg-gray-700" 
-                onclick="location.href='./#contact'">
+                onclick="location.href='https://github.com/kb12233/code-interpreter'">
                 Github
               </button>
             </div>
@@ -213,9 +215,30 @@
   </div>
   
   <!-- contact section -->
+  <div id="contact" class="flex mb-40 items-center justify-center">
+    <section class=" ">
+      <div class="flex flex-col items-center justify-center gap-2 mb-16">
+        <p class="text-sm text-gray-500">Get in Touch</p>
+        <h1 class="font-bold text-3xl">Contact Me</h1>
+      </div>
+      <div class="flex flex-wrap gap-2 items-center justify-center border-2 border-gray-400 rounded-full">
+        <div class="flex items-center justify-center mt-4 ml-4 mb-4">
+          <img src="/assets/img/email.png" class="h-10">
+          <a href="mailto:kbocfemia@gmail.com">kbocfemia@gmail.com</a>
+        </div>
+  
+        <div class="flex items-center justify-center mt-4 mr-4 mb-4">
+          <img src="/assets/img/linkedin copy.png" class="h-8">
+          <a href="https://www.linkedin.com/in/karl-brandon-ocfemia/">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </div>
 
   <!-- footer -->
-
+  <footer id="footer" class="flex items-center justify-center mb-10">
+    <p class="text-gray-500">Copyright &#169; 2024 Karl Brandon Ocfemia. All Rights Reserved.</p>
+  </footer>
   <script src="app.js"></script>
 </body>
 </html>
