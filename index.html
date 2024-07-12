@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="./src/output.css" rel="stylesheet">
 
   <title>Kb's Portfolio</title>
 </head>
-<body class="font-mono">
+<body class="font-jbmono">
   <!-- nav -->
   <div id="nav">
      <nav class="top-0 bg-white w-full">
@@ -18,7 +18,8 @@
           <span id="kb" class="text-2xl font-bold">Karl Brandon Ocfemia</span>
         </div>
         
-        <ul class="hidden md:flex space-x-10 text-gray-700 font-bold text-sm">
+        <!-- nav links -->
+        <ul class="hidden md:flex space-x-10 text-custom_gray2 font-bold text-sm">
           <li class="hover:text-gray-400">
             <a href="#about">About</a>
           </li>
@@ -30,13 +31,15 @@
           </li>
         </ul>
         
+        <!-- hamburger menu icon -->
         <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
           <div class="w-6 h-0.5 bg-black"></div>
         </div>
         
-        <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 font-bold text-gray-700 text-center border-b-4 border-gray-300">
+        <!-- hamburger menu -->
+        <ul id="menu" class="hidden absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 font-bold text-custom_gray2 text-center border-b-4 border-gray-300">
           <li>
             <a id="hamburger-option" href="#about" class="hover:text-gray-400">About</a>
           </li>
@@ -47,6 +50,7 @@
             <a id="hamburger-option" href="#contact" class="hover:text-gray-400">Contact</a>
           </li>
         </ul>
+
       </div>
      </nav>
   </div>
@@ -55,28 +59,38 @@
   <!-- profile section -->
   <div id="profile" class="w-full flex items-center justify-center mt-44 mb-44">
     <section class="container flex flex-col md:flex-row items-center justify-center gap-20 w-full">
+      
+      <!-- profile picture -->
       <div>
         <img src="./assets/img/Ocfemia_dp.jpg" class="rounded-full h-48 sm:h-56 md:h-72" alt="">
       </div>
   
+      <!-- profile info -->
       <div class="flex flex-col items-center justify-center gap-y-3">
-        <p class="font-bold text-gray-600 text-sm sm:text-base">Hello, I'm</p>
+        <!-- basic info -->
+        <p class="font-bold text-custom_gray2 text-sm sm:text-base">Hello, I'm</p>
         <h1 class="font-bold text-2xl sm:text-3xl">Kb Ocfemia</h1>
-        <p class="font-bold text-base sm:text-xl text-gray-600">Computer Science Student</p>
+        <p class="font-bold text-base sm:text-xl text-custom_gray2">Computer Science Student</p>
+        
         <div class="flex flex-wrap items-center justify-center gap-2">
+          <!-- download resume -->
           <button
-            class="flex items-center gap-2 font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 hover:bg-gray-700 hover:text-white"
-            onclick="window.open('./assets/Ocfemia_Resume.pdf')"
+            class="flex items-center gap-2 font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-custom_gray hover:bg-custom_gray hover:text-white"
+            onclick="window.open('/assets/Ocfemia_Resume.pdf')"
           >
             <img src="./assets/img/download_icon.png" class="h-4" alt="">
             Resume
           </button>
+
+          <!-- contact info -->
           <button 
-            class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-gray-700 text-white hover:bg-black" 
+            class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-custom_gray text-white hover:bg-black" 
             onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
+
+        <!-- socials -->
         <div id="socials-container" class="flex gap-3">
           <img
             src="./assets/img/linkedin copy.png"
@@ -98,11 +112,13 @@
   <!-- about section -->
   <div id="about" class="w-full flex items-center justify-center mt-72 mb-44">
     <section id="about" class="container flex flex-col items-center justify-center gap-2 w-full">
+      <!-- section title -->
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
-        <p class="text-sm text-gray-500">Get To Know More</p>
+        <p class="text-sm text-custom_gray2">Get To Know More</p>
         <h1 class="font-bold text-3xl">About Me</h1>
       </div>
       <div class="flex flex-col lg:flex-row items-center justify-center gap-2 px-10 xl:px-32">
+        <!-- profile picture -->
         <img
             src="./assets/img/Ocfemia_dp2_bw.jpg"
             alt="Profile picture"
@@ -110,6 +126,8 @@
           />
         <div class="flex flex-col gap-2">
           <div class="flex flex-col md:flex-row gap-2 px-5">
+
+            <!-- Skills -->
             <div class="flex flex-1 flex-col items-center justify-start border-2 border-gray-400 rounded-lg">
               <img
                 src="./assets/img/experience.png"
@@ -127,6 +145,8 @@
               <p class="text-center font-bold text-sm">Mobile App Development:</p>
               <p class="text-center text-sm">Android, Flutter</p>
             </div>
+
+            <!-- Education -->
             <div class="flex flex-1 flex-col items-center justify-start border-2 border-gray-400 rounded-lg">
               <img
                 src="./assets/img/education.png"
@@ -143,6 +163,8 @@
               <p class="text-center text-sm">BS Biology (Transferred after 3 years)</p>
             </div>
           </div>
+
+          <!-- Brief Info -->
           <div class="px-5">
             <p class="text-sm">
               Dedicated BS Computer Science student with a 
@@ -160,20 +182,23 @@
   <!-- projects section -->
   <div id="projects" class="mt-72 mb-44">
     <section>
+      <!-- section title -->
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
-        <p class="text-sm text-gray-500">Check Out My Recent</p>
+        <p class="text-sm text-custom_gray2">Check Out My Recent</p>
         <h1 class="font-bold text-3xl">Projects</h1>
       </div>
 
       <div id="card-container" class="flex flex-wrap items-center justify-center gap-4">
-        <div class="border-2 border-gray-400 rounded-xl overflow-hidden w-80 sm:w-96">
+        
+        <!-- card 1 -->
+        <div class="card">
           <img src="./assets/img/classy_code-sc.png" class="h-96 w-full object-cover">
           <div class="m-4">
             <span id="project-name" class="font-semibold">ClassyCode</span>
             <span id="project-description" class="block">A Flutter desktop app that generates code from class diagram images.</span>
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
-                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-gray-700 text-white hover:bg-black" 
+                class="card_button" 
                 onclick="location.href='https://github.com/kb12233/classy_code'">
                 Github
               </button>
@@ -181,14 +206,15 @@
           </div>
         </div>
 
-        <div class="border-2 border-gray-400 rounded-xl overflow-hidden w-80 sm:w-96">
+        <!-- card 2 -->
+        <div class="card">
           <img src="./assets/img/RentEase.png" class="h-96 w-full object-cover">
           <div class="m-4">
             <span id="project-name" class="font-semibold">RentEase</span>
             <span id="project-description" class="block">An AirBnB clone built with Flutter and Firebase.</span>
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
-                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-gray-700 text-white hover:bg-black" 
+                class="card_button" 
                 onclick="location.href='https://github.com/kb12233/rent_ease'">
                 Github
               </button>
@@ -196,14 +222,15 @@
           </div>
         </div>
         
-        <div class="border-2 border-gray-400 rounded-xl overflow-hidden w-80 sm:w-96">
+        <!-- card 3 -->
+        <div class="card">
           <img src="./assets/img/code_sc_lg.png" class="h-96 w-full object-cover">
           <div class="m-4">
             <span id="project-name" class="font-semibold">CODE Interpreter</span>
             <span id="project-description" class="block">Interpreter written in Java for a programming language we call CODE.</span>
             <div id="btn-container" class="flex justify-center mt-2">
               <button 
-                class="font-semibold transition-all duration-300 ease-in-out py-1 px-2 sm:py-2 sm:px-4 text-sm sm:text-base rounded-full border border-gray-700 bg-gray-700 text-white hover:bg-black" 
+                class="card_button" 
                 onclick="location.href='https://github.com/kb12233/code-interpreter'">
                 Github
               </button>
@@ -216,17 +243,21 @@
   
   <!-- contact section -->
   <div id="contact" class="flex mb-40 items-center justify-center">
+    <!-- section title -->
     <section class=" ">
       <div class="flex flex-col items-center justify-center gap-2 mb-16">
-        <p class="text-sm text-gray-500">Get in Touch</p>
+        <p class="text-sm text-custom_gray2">Get in Touch</p>
         <h1 class="font-bold text-3xl">Contact Me</h1>
       </div>
+      
       <div class="flex flex-wrap gap-2 items-center justify-center border-2 border-gray-400 rounded-full">
+        <!-- email -->
         <div class="flex items-center justify-center mt-4 ml-4 mb-4">
           <img src="./assets/img/email.png" class="h-10">
           <a href="mailto:kbocfemia@gmail.com">kbocfemia@gmail.com</a>
         </div>
-  
+        
+        <!-- linkedin -->
         <div class="flex items-center justify-center mt-4 mr-4 mb-4">
           <img src="./assets/img/linkedin copy.png" class="h-8">
           <a href="https://www.linkedin.com/in/karl-brandon-ocfemia/">LinkedIn</a>
@@ -237,7 +268,7 @@
 
   <!-- footer -->
   <footer id="footer" class="flex items-center justify-center mb-10">
-    <p class="text-gray-500">Copyright &#169; 2024 Karl Brandon Ocfemia. All Rights Reserved.</p>
+    <p class="text-custom_gray2">Copyright &#169; 2024 Karl Brandon Ocfemia. All Rights Reserved.</p>
   </footer>
   <script src="./src/app.js"></script>
 </body>
