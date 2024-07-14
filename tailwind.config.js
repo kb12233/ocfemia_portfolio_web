@@ -16,6 +16,11 @@ module.exports = {
       jbmono: ["JetBrains Mono", "monospace"],
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+  daisyui: {
+    themes: ["light"],
+  }
 }
 
